@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FH: Campground & Cabins</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700" rel="stylesheet">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo-wrapper">
+        <a class="logo" href="#">  <img src="logo/fhcLogoBlack@2x.png" alt="Fire House Campground Logo"></a>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label unchecked"><i class="fas fa-bars"></i></label>
+      <label for="nav-toggle" class="nav-toggle-label checked"><i class="fas fa-times"></i></i></label>
+      <!-- unchecked label: <i class="fas fa-times"></i> -->
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Book now</a></li>
+          <li><a href="#">Rates</a></li>
+
+          <!-- Explore to be made into dropdown w/ these options: About, Amenities, Activities, Attractions -->
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="content">
+
+      <section class="home-hero">
+            <h1 class="call-to-action">Plan your adventure.</h1>
+            <button type="button" class="btn btn-accent">book now</button>
+            <button type="button" class="btn btn-borderless">learn more</button>
+      </section>
+
+
+      <section class="home-quick-nav">
+        <h1 class="section-header">Explore</h1>
+        <!-- <div class="quick-nav-btn-wrapper"> -->
+        <button type="button" class="quick-nav-btn" id="amenities-nav-btn"><img src="icons/tentLg.png" alt="Tent icon">Amenities</button>
+        <button type="button" class="quick-nav-btn" id="activities-nav-btn"><img src="icons/kayakLg.png" alt="Kayak icon">Activities</button>
+        <button type="button" class="quick-nav-btn" id="attractions-nav-btn"><img src="icons/locationLg.png" alt="Location marker icon">Attractions</button>  
+        <!-- </div> -->
+      </section>
+
+      <section class="home-about">
+        <div class="about-text-box">
+          <h1>About our Campground</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ultrices ipsum. Curabitur vulputate nisl quis facilisis tristique.
+          </p>
+          <p>
+            Maecenas sed nulla pretium felis maximus malesuada vitae vel est. Vestibulum quis sapien ipsum. Donec at feugiat erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+          <p>
+            Morbi varius accumsan nulla sed sagittis. Vivamus eget maximus augue.Vestibulum quis sapien ipsum. Donec vitae ultrices ipsum. Curabitur vulputate nisl quis facilisis tristique.
+          </p>
+        </div> 
+      </section>
+
+      <!-- amenities section -->
+      <section class="home-amenities">
+        
+        <div class="section-header-block">
+
+          <img src="icons/tentLg.png" alt="Tent icon">
+          <h1 class="section-header">Amenities</h1>
+
+        </div>
+
+        <ul class="grid-def grid-amenities">
+   
+          <!-- amenity #1 -->
+          
+          <li class="home-amenity" id="amenity-one">
+
+            <div class="textbox">
+
+              <h2 class="section-subheaders">Primative Campsites</h2>
+              <p>private, riverfront, with firepit</p>
+              <button type="button" class="btn btn-accent">learn more</button>
+
+            </div>
+
+          </li>
+
+          <!-- amenity #2 -->
+          <li class="home-amenity" id="amenity-two">
+
+            <div class="textbox">
+
+              <h2 class="section-subheaders">Riverfront picnic area</h2>
+              <p>picnic tables, grills, river views</p>
+              <button type="button" class="btn btn-accent">learn more</button>
+
+            </div>
+
+          </li>
+
+          <!-- amenity #3 -->
+          <li class="home-amenity" id="amenity-three">
+
+            <div class="textbox">
+
+              <h2 class="section-subheaders">Open fields</h2>
+              <p>outdoor games, stargazing, picnics, etc.</p>
+              <button type="button" class="btn btn-accent">learn more</button>
+
+            </div>
+
+          </li>
+
+          <!-- amenity #4 -->
+          <li class="home-amenity" id="amenity-four">
+
+            <div class="textbox">
+              
+              <h2 class="section-subheaders">Kayak launch</h2>
+              <p>convenient & includes pick-up</p>
+              <button type="button" class="btn btn-accent">learn more</button>
+
+            </div>
+
+          </li>
+
+          <!-- amenity #5 -->
+          <li class="home-amenity " id="amenity-five">
+
+            <div class="textbox">
+              <h2 class="section-subheaders">Tube/kayak/canoe rentals</h2>
+              <p>relax or paddle down the river</p>
+              <button type="button" class="btn btn-accent">learn more</button>
+            </div>
+
+          </li>
+
+      </section>
+
+      <!-- activities section -->
+      <section class="home-activities">
+
+        <div class="section-header-block">
+          <img src="icons/kayakLg.png" alt="Kayak icon">
+          <h1 class="section-header">Activities</h1>
+        </div>
+
+        <ul class="grid-def grid-two-col">
+          <!-- activity #1 -->
+          <li class="home-activity" id="activity-one">
+            <img src="icons/hiking.png" alt="person hiking icon">
+            <h2 class="section-subheaders">Hike around the eight acre property</h2>
+            <p>Over two miles of trails <a href="http://">(tap for details)</a></p>
+          </li>
+
+          <!-- activity #2 -->
+          <li class="home-activity" id="activity-two">
+            <img src="icons/fishing.png" alt="person fishing icon">
+            <h2 class="section-subheaders">Fish right from your campsite</h2>
+            <p>Cleaning station available <a href="http://">(tap for details)</a></p>
+          </li>
+
+          <!-- activity #3 -->
+          <li class="home-activity" id="activity-three">
+            <img src="icons/tubing.png" alt="person holding inner tube icon">
+            <h2 class="section-subheaders">Relax & tube down the river</h2>
+            <p>WBring your own or rent from us <a href="http://">(tap for details)</a></p>
+          </li>
+
+          <!-- activity #4 -->
+          <li class="home-activity" id="activity-four">
+            <img src="icons/kayaking.png" alt="person kayaking icon">
+            <h2 class="section-subheaders">Kayak or Canoe down the river</h2>
+            <p>We'll taxi you up river <a href="http://">(tap for details)</a></p>
+          </li>
+
+          <!-- activity #5 -->
+          <li class="home-activity" id="activity-five">
+            <img src="icons/frisbeeing.png" alt="person catching frisbee icon">
+            <h2 class="section-subheaders">Play outdoor games, picnic, stargaze</h2>
+            <p>Frisbee, badminton, cornhole, & more <a href="http://">(tap for details)</a></p>
+          </li>
+
+        </ul>
+
+      </section>
+
+      <!-- home attractions -->
+      <section class="home-attractions">
+
+        <div class="section-header-block">
+          <img src="icons/locationDrk.png" alt="Location marker icon">
+          <h1 class="section-header">Attractions</h1>
+        </div>
+      
+        <ul class="grid-def grid-two-col"> 
+          <!-- attraction #1 -->
+          <li class="home-attraction" id="attraction-one">
+            <img src="photos/attractions/gwForest.png" alt="Airial of Georgia Washington Forest">
+            <h2 class="section-subheaders">Natural & Scenic</h2>
+            <p>Nat'l parks, trails, scenic drives <a href="http://">(tap for details)</a></p>
+          </li>
+
+          <!-- attraction #2 -->
+          <li class="home-attraction" id="attraction-two">
+            <img src="photos/attractions/monticello.png" alt="front of Monticello's main building">
+            <h2 class="section-subheaders">Cultural & Historic</h2>
+            <p>Monticello, Yogaville, & more <a href="http://">(tap for details)</a></p>
+          </li>
+
+          <!-- attraction #3 -->
+          <li class="home-attraction" id="attraction-three">
+            <img src="photos/attractions/farmersmarket.png" alt="close-up of goods on a market stand">
+            <h2 class="section-subheaders">Farms & Markets</h2>
+            <p>Local goods, apple picking, etc. <a href="http://">(tap for details)</a></p>
+          </li>
+
+          <!-- attraction #4 -->
+          <li class="home-attraction" id="attraction-four">
+              <img src="photos/attractions/skis.png" alt="close-up of ski poles in snow">
+              <h2 class="section-subheaders">River & Winter Sports</h2>
+            <p>River tours, Wintergreen resort, <a href="http://">(tap for details)</a></p>
+          </li>
+
+          <!-- attraction #5 -->
+          <li class="home-attraction" id="attraction-five">
+            <img src="photos/attractions/wineandbeer.png" alt="People drinking wine and beer">
+            <h2 class="section-subheaders">Breweries & Wineries</h2>
+            <p>Many within an hour drive <a href="http://">(tap for details)</a></p>
+          </li>
+        </ul>
+
+      </section>
+
+      <footer class="home-footer">
+        
+        <div class="home-call-to-action">
+          <h1 class="call-to-action">Walk the path.</h1>
+          <button type="button" class="btn btn-accent">book now</button>
+        </div>
+
+        <div class="logo-wrapper">
+            <a class="navbar-brand" href="#">  <img src="logo/fhcLogoWhite@2x.png" alt="Fire House Campground Logo"></a>
+            <button type="button" class="btn" onclick="topFunction()">back to top</button>
+        </div>
+
+      </footer>
+
+    </div>
+
+  </body>
+</html>
