@@ -4,4 +4,5 @@ A basic mock-up of a campground landing page I created from scratch in order to 
 Technologies:
 * HTML
 * CSS
+* Responsive design
 * Javascript
